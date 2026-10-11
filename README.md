@@ -282,4 +282,74 @@ const supabaseClient = supabase.createClient(
 );
 ```
 
-> ⚠️ Jangan memasukkan `service_role` atau
+> ⚠️ Jangan memasukkan `service_role` atau secret key ke dalam frontend maupun repository publik. Gunakan **anon/publishable key** untuk aplikasi client-side.
+
+### 3. Jalankan Aplikasi
+
+Cara termudah menggunakan **Visual Studio Code**:
+
+1. Buka folder project di VS Code.
+2. Install ekstensi **Live Server**.
+3. Buka `index.html`.
+4. Klik kanan.
+5. Pilih **Open with Live Server**.
+
+Aplikasi kemudian dapat dibuka melalui browser.
+
+## GitHub Pages
+
+Project ini juga dapat dijalankan menggunakan GitHub Pages.
+
+Demo aplikasi:
+
+```
+https://cahayakamila44-sudo.github.io/Aplikasi-Sistem-Depot-Air/
+```
+
+Repository:
+
+```
+https://github.com/cahayakamila44-sudo/Aplikasi-Sistem-Depot-Air
+```
+
+## Keamanan
+
+- Gunakan hanya **anon/publishable key** Supabase pada frontend.
+- Jangan menyimpan `service_role` atau secret key di repository GitHub.
+- Konfigurasi database harus menggunakan pengaturan keamanan Supabase yang sesuai.
+- Validasi data sebaiknya tidak hanya dilakukan pada browser, tetapi juga pada sisi database.
+- Untuk penggunaan produksi, autentikasi pengguna dan **Row Level Security (RLS)** sebaiknya diaktifkan.
+
+## Keterbatasan
+
+- Sistem masih berupa aplikasi sederhana untuk pengelolaan penjualan dan penerimaan kas depot air minum.
+- Sistem belum memiliki fitur login pengguna pada antarmuka yang tersedia.
+- Menu utama masih terbatas pada Dashboard, Penjualan, Penerimaan Kas, dan Persediaan.
+- Sistem belum menampilkan jurnal umum, buku besar, maupun laporan keuangan lengkap.
+- Keamanan database bergantung pada konfigurasi policy dan RLS yang diterapkan pada Supabase.
+- Untuk jumlah data yang semakin besar, sistem masih dapat dikembangkan dengan pagination, pencarian, filter, dan laporan yang lebih lengkap.
+
+## Pengembangan Selanjutnya
+
+Beberapa fitur yang dapat ditambahkan pada pengembangan berikutnya:
+
+- Login dan autentikasi pengguna
+- Manajemen pelanggan
+- Laporan penjualan per periode
+- Laporan penerimaan kas
+- Pencarian dan filter transaksi
+- Notifikasi stok minimum
+- Riwayat perubahan persediaan
+- Jurnal umum otomatis
+- Buku besar
+- Laporan laba rugi
+- Cetak atau ekspor laporan
+- Dashboard dengan grafik penjualan
+
+## Tentang Project
+
+**Sistem Depot Air Minum – Sistem Penjualan & Penerimaan Kas**
+
+Project ini dibuat untuk menerapkan konsep sistem informasi dalam proses pencatatan transaksi penjualan, penerimaan kas, dan pengelolaan persediaan pada usaha depot air minum.
+
+**Pengembang:** Cahaya Kamila
