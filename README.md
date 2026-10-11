@@ -214,7 +214,7 @@ Relasi antar entitas:
 Aplikasi-Sistem-Depot-Air/
 │
 ├── backend/
-│   └── ...
+│   └── Database
 │
 ├── frontend/
 │   ├── html/
@@ -235,6 +235,7 @@ Aplikasi-Sistem-Depot-Air/
 
 | **File**     | **Fungsi**                                                                      |
 | ------------ | ------------------------------------------------------------------------------- |
+| `Database`   | Tempat menyimpan data secara terstruktur & terorganisir                         |
 | `index.html` | Halaman utama aplikasi Sistem Depot Air Minum                                   |
 | `style.css`  | Mengatur desain dan tampilan aplikasi                                           |
 | `config.js`  | Mengatur konfigurasi koneksi dengan Supabase                                    |
